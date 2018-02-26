@@ -1,0 +1,9 @@
+# 应用配置
+server:
+  port: 8088
+
+# helloworld starter 配置
+helloworld.author:
+  name: foo
+  roles: admin, developer
+  email: foo@bar.com
