@@ -1,0 +1,19 @@
+---
+server:
+  port: 8080
+spring:
+  profiles: dev
+#  application:
+#    name: ${run.environment}
+logging:
+  config: classpath:log4j2-dev.xml
+
+---
+server:
+  port: 8088
+spring:
+  profiles: test
+#  application:
+#    name: ${run.environment}
+logging:
+  config: classpath:log4j2-test.xml
