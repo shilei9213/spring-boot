@@ -21,7 +21,7 @@
         </dependency>
         <dependency>
             <groupId>x.demo.springboot.starter</groupId>
-            <artifactId>spring-boot-helloworld-starter</artifactId>
+            <artifactId>spring-boot-starter-helloworld</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>module/spring-boot-helloworld-starter</module>
+        <module>module/spring-boot-starter-helloworld</module>
     </modules>
 
     <properties>
