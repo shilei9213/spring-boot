@@ -1,6 +1,7 @@
 package x.demo.springboot.template.dao.entity;
 
 import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
