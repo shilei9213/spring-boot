@@ -13,6 +13,7 @@
 
     <modules>
         <module>module/spring-boot-template-web</module>
+        <module>module/spring-boot-template-dao-jpa</module>
     </modules>
 
     <properties>
