@@ -2,8 +2,22 @@
 server:
   port: 8088
 
+# actuator 监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
+    shutdown:
+      enabled: true
+
+  endpoint:
+    health:
+      show-details: always
+
 # helloworld starter 配置
 helloworld.author:
   name: foo
   roles: admin, developer
   email: foo@bar.com
+
