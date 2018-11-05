@@ -7,6 +7,7 @@
         <groupId>x.demo.springboot</groupId>
         <artifactId>spring-boot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>spring-boot-web</artifactId>
@@ -29,12 +30,13 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>x.demo.springboot.starter</groupId>
+            <artifactId>spring-boot-actuator-app</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
