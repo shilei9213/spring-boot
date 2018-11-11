@@ -22,8 +22,10 @@ public class AppHealthIndicator implements HealthIndicator {
     public Health health() {
         int errorCode = check();
         if (errorCode != 0) {
+            // 状态不正常
             return Health.down().withDetail("Error Code", errorCode).build();
         }
+        // 健康
         return Health.up().build();
     }
 

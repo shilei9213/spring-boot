@@ -1,7 +1,7 @@
 package x.demo.springboot.actuator.health;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+        import org.springframework.context.annotation.Bean;
+        import org.springframework.context.annotation.Configuration;
 
 /**
  * AppHealthIndicatorConfiguration
@@ -12,12 +12,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppHealthIndicatorConfiguration {
 
-    @Bean
+    // 指定名字
+    @Bean("app-state")
     AppHealthIndicator appHealthIndicator() {
         return new AppHealthIndicator();
     }
 
-    @Bean
+    @Bean("app-state-extra")
     AppExtraHealthIndicator appExtraHealthIndicator() {
         return new AppExtraHealthIndicator();
     }

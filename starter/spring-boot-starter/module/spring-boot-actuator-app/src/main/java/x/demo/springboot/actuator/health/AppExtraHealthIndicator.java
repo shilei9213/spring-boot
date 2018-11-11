@@ -22,6 +22,7 @@ public class AppExtraHealthIndicator extends AbstractHealthIndicator {
      */
     @Override
     protected void doHealthCheck(Health.Builder builder) throws Exception {
+        // 如果不正常，抛异常接口，AbstractHealthIndicator 完成异常捕获，down
         builder.up().withDetail("app-extra", "app-extra");
     }
 }

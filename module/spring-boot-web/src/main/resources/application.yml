@@ -4,13 +4,34 @@ server:
 
 # actuator 监控
 management:
+  # 监控开放的端口，可以区别于 应用web服务端口
+  server:
+    port: 8088
   endpoints:
+    # 配置Http 暴露的 Endpoint
     web:
       exposure:
+        # include 用于开放指定Endpoint，只开放需要的，默认["info","health"]
         include: ["*"]
+        # exclude 用于排除指定的Endpoint，只开放需要的
+        exclude: []
+      # web 访问路径
+      base-path: /actuator
+
+
+    # 配置Http 暴露的 Endpoint
+    jmx:
+      exposure:
+        # include 用于开放指定Endpoint，只开放需要的，默认["*"]
+        include: ["*"]
+        # exclude 用于排除指定的Endpoint，只开放需要的
+        exclude: []
+
+    # enable 用于 开启禁用 某个 Endpoint， "shutdown" 为 Endpoint id
     shutdown:
       enabled: true
 
+  # headlth Endpoint 配置
   endpoint:
     health:
       show-details: always
